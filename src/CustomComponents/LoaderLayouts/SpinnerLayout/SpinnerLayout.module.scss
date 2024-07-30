@@ -1,0 +1,10 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+// css variable
+$defaultFontFamily: 'Segoe UI', sans-serif;
+
+.spinnerLayout1,
+.spinnerLayout1 * {
+    font-family: 'customFontFamily', $defaultFontFamily;
+    box-sizing: border-box;
+}

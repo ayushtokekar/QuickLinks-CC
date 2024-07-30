@@ -1,0 +1,186 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+// css variable
+$defaultFontFamily: 'Segoe UI', sans-serif;
+
+
+.tileWithIconLayout,
+.tileWithIconLayout * {
+    font-family: 'customFontFamily', $defaultFontFamily;
+    box-sizing: border-box;
+}
+
+.allItemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.itemContainer {
+    height: 93px;
+    width: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    margin: 7px 5px 0px 5px;
+    cursor: pointer;
+    transition: all .5s;
+    background-color: var(--bgColor);
+    align-items: center;
+}
+
+.itemTitle {
+    font-size: 16px;
+    font-family: 'customFontFamily', $defaultFontFamily;
+    margin: 0;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #ffffff;
+    width: 100%;
+    line-height: normal;
+}
+
+.defaultImage {
+    width: 100%;
+    height: 100%;
+}
+
+.iconContainer {
+    display: flex;
+    width: 50px;
+    height: 50px;
+
+    img {
+        width: -webkit-fill-available;
+        height: auto;
+        object-fit: scale-down;
+    }
+}
+
+//.xl4Style,
+.xl8Style {
+    color: transparent;
+}
+
+.xl4Style{
+
+    .itemContainer {
+        width: 160px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .itemContainer {
+            width: 190px !important;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .itemContainer {
+            width: 116px !important;
+        }
+    }
+
+    @media only screen and (max-width: 414px) {
+        .itemContainer {
+            width: 40% !important;
+        }
+    }
+
+    @media only screen and (max-width: 353px) {
+        .itemContainer {
+            width: 80% !important;
+        }
+    }
+}
+
+.itemContainer:hover {
+    background-color: var(--bgColorOnHover) !important;
+}
+
+.quickLinks__link-grid-icon {
+    height: 50px;
+    width: 50px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.xl12Style {
+    .itemContainer {
+        width: 160px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .itemContainer {
+            width: 190px !important;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .itemContainer {
+            width: 116px !important;
+        }
+    }
+
+    @media only screen and (max-width: 414px) {
+        .itemContainer {
+            width: 40% !important;
+        }
+    }
+
+    @media only screen and (max-width: 353px) {
+        .itemContainer {
+            width: 80% !important;
+        }
+    }
+}
+
+.xl6Style {
+    .itemContainer {
+        width: 140px;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .itemContainer {
+            width: 25% !important;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .itemContainer {
+            width: 38% !important;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding-left: 10px !important;
+
+        .itemContainer {
+            width: 36% !important;
+        }
+    }
+
+    @media only screen and (max-width: 428x) {
+        .itemContainer {
+            width: 110px !important;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        .itemContainer {
+            width: 90px !important;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .itemContainer {
+            width: 70% !important;
+        }
+    }
+}

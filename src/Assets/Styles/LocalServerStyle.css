@@ -1,0 +1,5 @@
+/* Below css help to override the some css to increase the extra width on local server */
+
+#workbenchPageContent, .CanvasComponent.LCS .CanvasZone{
+    max-width: 100% !important;
+}

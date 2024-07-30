@@ -1,0 +1,183 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+// css variable
+$defaultFontFamily: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+.quickLinks {
+    font-family: 'customFontFamily', $defaultFontFamily;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 0px;
+}
+
+.quickLinks__horizontal {
+    font-family: 'customFontFamily', $defaultFontFamily;
+    padding-right: 10px;
+
+    [class^="slick-prev"]::before,
+    [class*="slick-prev"]::before,
+    [class^="slick-next"]:before,
+    [class*="slick-next"]:before {
+        color: #FF8FD0 !important;
+    }
+}
+
+.quickLinks__horizontalWithoutSlider {
+    display: block;
+}
+
+.quickLinks__link-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.quickLinks__link-div {
+    max-width: inherit;
+    margin: 0 9px;
+    height: 115px !important;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer
+}
+
+.quickLinks__link-divWithoutSlider {
+    border-radius: 5px;
+    width: 115px !important;
+    height: 115px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 11px;
+    margin-left: 11px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.quickLinks__link-icon {
+    height: 50px;
+    width: 50px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.quickLinks__link-title {
+    font-size: 14px;
+    font-family: 'customFontFamily', $defaultFontFamily;
+    margin: 10px 0 0 0;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+}
+
+
+// Media query
+
+@media only screen and (max-width: 1700px) and (min-width: 1450px) {
+    .quickLinks {
+        .quickLinks__link-icon {
+            height: 50px;
+            width: 50px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1029px) and (min-width: 960px) {
+    .quickLinks {
+        .quickLinks__link-divWithoutSlider {
+            width: 105px !important;
+            height: 105px !important;
+            margin-left: 9px;
+            margin-right: 9px;
+        }
+
+        .quickLinks__link-icon {
+            height: 40px;
+            width: 40px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 769px) and (min-width: 535px) {
+    .quickLinks {
+        .quickLinks__link-divWithoutSlider {
+            width: 100px !important;
+            height: 100px !important;
+            margin: 0 11px 0 11px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 526px) and (min-width: 380px) {
+    .quickLinks {
+        .quickLinks__link-divWithoutSlider {
+            width: 95px !important;
+            height: 95px !important;
+            margin: 0 18px 0 18px;
+        }
+
+        .quickLinks__link-icon {
+            height: 35px;
+            width: 35px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 379px) and (min-width: 325px) {
+    .quickLinks {
+        .quickLinks__horizontal {
+            position: relative;
+            left: 9% !important;
+            margin-right: 70px !important;
+        }
+
+        .quickLinks__link-divWithoutSlider {
+            width: 80px !important;
+            height: 80px !important;
+            margin: 0 18px 0 18px;
+        }
+
+        .quickLinks__link-icon {
+            height: 28px;
+            width: 28px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 324px) and (min-width: 280px) {
+    .quickLinks {
+        .quickLinks__link-divWithoutSlider {
+            width: 70px !important;
+            height: 70px !important;
+            margin: 0 18px 0 18px;
+        }
+    }
+
+}

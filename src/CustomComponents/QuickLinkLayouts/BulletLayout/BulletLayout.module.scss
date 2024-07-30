@@ -1,0 +1,54 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+// css variable
+$defaultFontFamily: 'Segoe UI', sans-serif;
+
+.bulletView,
+.bulletView * {
+    font-family: 'customFontFamily', $defaultFontFamily;
+    box-sizing: border-box;
+}
+
+
+.containerDiv {
+    padding: 15px 0px 15px 15px;
+}
+
+.bulletViewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.bulletViewItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.defaultIcon {
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+}
+
+.bulletViewTitle {
+    font-size: 16px;
+    font-family: 'customFontFamily', $defaultFontFamily;
+    margin: 0;
+    padding-right: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #000;
+    width: fit-content;
+    height: 20px;
+}
+
+.fullWithStyleManage {
+    margin: 10px 10px 0 10px;
+}

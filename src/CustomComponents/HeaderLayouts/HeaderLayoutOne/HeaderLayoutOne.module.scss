@@ -1,0 +1,36 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+// css variable
+$defaultFontFamily: 'Segoe UI', sans-serif;
+
+.quickLinksHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.quickLinksSeeAll {
+    color: #088cd0;
+    font-family: 'customFontFamily', $defaultFontFamily;
+    font-size: 14px;
+    margin: 0;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.webPartHeading {
+    font-size: 18px;
+    font-family: 'customFontFamily', $defaultFontFamily;
+    padding: 5px 5px 5px 0;
+    font-weight: 700;
+    position: relative;
+    margin: 0 0 10px 0;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    text-decoration: inherit;
+    width: max-content;
+    border-bottom: 2px solid #FF8FD0;
+    color: #000000;
+}

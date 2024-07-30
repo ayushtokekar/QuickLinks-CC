@@ -1,0 +1,147 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+// css variable
+$defaultFontFamily: 'Segoe UI', sans-serif;
+
+
+.quickLinks,
+.quickLinks * {
+    font-family: 'customFontFamily', $defaultFontFamily;
+    box-sizing: border-box;
+}
+
+.containerDiv {
+    padding: 15px 0px 15px 15px;
+}
+
+.fullWithStyleManage {
+    margin: 10px 10px 0 10px;
+}
+
+.quickLinks__link-title_Grid {
+    font-size: 14px;
+    font-family: 'customFontFamily', $defaultFontFamily;
+    margin: 10px 0 0 0;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #ffffff;
+    width: 100%;
+}
+
+
+.xl4Style,
+.xl8Style {
+    color: transparent;
+}
+
+
+.quickLinks__grid__div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.quickLinks__link-grid-div {
+    border-radius: 7px;
+    height: 120px;
+    width: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 0 8px;
+    margin: 7px 9px 9px 9px;
+    box-sizing: unset !important;
+    cursor: pointer;
+    background-color: var(--bgColor);
+}
+
+.quickLinks__link-grid-div:hover {
+    background-color: var(--bgColorOnHover) !important;
+}
+
+.quickLinks__link-grid-icon {
+    height: 50px;
+    width: 50px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.xl12Style {
+    .quickLinks__link-grid-div {
+        width: 125px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .quickLinks__link-grid-div {
+            width: 190px !important;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .quickLinks__link-grid-div {
+            width: 116px !important;
+        }
+    }
+
+    @media only screen and (max-width: 414px) {
+        .quickLinks__link-grid-div {
+            width: 35% !important;
+        }
+    }
+
+    @media only screen and (max-width: 353px) {
+        .quickLinks__link-grid-div {
+            width: 80% !important;
+        }
+    }
+}
+
+.xl6Style {
+    .quickLinks__link-grid-div {
+        width: 140px;
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .quickLinks__link-grid-div {
+            width: 25% !important;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .quickLinks__link-grid-div {
+            width: 38% !important;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding-left: 10px !important;
+
+        .quickLinks__link-grid-div {
+            width: 36% !important;
+        }
+    }
+
+    @media only screen and (max-width: 428x) {
+        .quickLinks__link-grid-div {
+            width: 110px !important;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        .quickLinks__link-grid-div {
+            width: 90px !important;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .quickLinks__link-grid-div {
+            width: 70% !important;
+        }
+    }
+}

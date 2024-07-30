@@ -1,0 +1,9 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+// css variable
+$defaultFontFamily: 'Segoe UI', sans-serif;
+
+.mainContainer,
+.mainContainer>* {
+  box-sizing: border-box;
+  font-family: 'customFontFamily', $defaultFontFamily;
+}
